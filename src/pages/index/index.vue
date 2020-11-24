@@ -15,7 +15,7 @@
 	export default class Index extends Vue {
 		title = 'Hello'
 		data = {
-			title: 'sdfsdfasdddddfasdf'
+			title: 'sdf'
 		}
 		onLoad() {
 
