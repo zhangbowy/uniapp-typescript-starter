@@ -1,24 +1,28 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
+		<image class="logo" src="../../static/logo.png"></image>
 		<view>
 			<text class="title">{{title}}</text>
+			<x-commodity :data="data"></x-commodity>
 		</view>
 	</view>
 </template>
 
-<script>
-	export default {
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
+<script lang="ts">
+	import { Vue, Component } from 'vue-property-decorator'
+
+	@Component
+	export default class Index extends Vue {
+		title = 'Hello'
+		data = {
+			title: 'sdfsdfasdddddfasdf'
+		}
 		onLoad() {
 
-		},
-		methods: {
+		}
 
+		mounted() {
+			console.log(this.$options)
 		}
 	}
 </script>

@@ -1,13 +1,18 @@
+<template>
+  <div class='title'>
+  </div>
+</template>
+
+
 <script lang='ts'>
 import { Vue, Component } from 'vue-property-decorator'
 
 @Component
-export default class App extends Vue {
-  name = 'App'
-  mpType = 'app'
+export default class Title extends Vue {
+  name = 'Title'
 }
 </script>
 
 <style lang='scss' scoped>
-  @import "uview-ui/index.scss";
+
 </style>
