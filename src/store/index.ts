@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex, { ModuleTree } from 'vuex'
 // 持久化插件
-import vuexPersist from 'vuex-persist'
+// import vuexPersist from 'vuex-persist'
 import getters from './getters'
 import setting from './modules/setting'
 import { RootState } from 'types'
@@ -9,9 +9,9 @@ import { RootState } from 'types'
 
 Vue.use(Vuex)
 
-const vuexLocal = new vuexPersist({
-  storage: window.localStorage
-})
+// const vuexLocal = new vuexPersist({
+//   storage: window.localStorage
+// })
 
 
 const modules: ModuleTree<RootState> = {
@@ -21,5 +21,5 @@ const modules: ModuleTree<RootState> = {
 export default new Vuex.Store<RootState>({
   getters: getters,
   modules: modules,
-  plugins: [vuexLocal.plugin]
+  // plugins: [vuexLocal.plugin]
 })
