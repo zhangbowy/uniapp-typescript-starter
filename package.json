@@ -67,6 +67,8 @@
   },
   "devDependencies": {
     "@babel/plugin-syntax-typescript": "^7.2.0",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@dcloudio/types": "*",
     "@dcloudio/uni-automator": "^2.0.0-29820201110001",
     "@dcloudio/uni-cli-shared": "^2.0.0-29820201110001",
@@ -114,7 +116,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "npx commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "browserslist": [
