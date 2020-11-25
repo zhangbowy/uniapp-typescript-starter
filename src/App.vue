@@ -1,17 +1,20 @@
-<script>
+<script lang="ts">
+import { Vue } from "vue-property-decorator";
+
 export default {
-  onLaunch: function () {
+  mpType: "app",
+  onLaunch() {
     console.log("App Launch");
   },
-  onShow: function () {
+  onShow() {
     console.log("App Show");
   },
-  onHide: function () {
+  onHide() {
     console.log("App Hide");
   },
 };
 </script>
 
-<style>
-/* 每个页面公共css */
+<style lang="scss" scoped>
+@import "uview-ui/index.scss";
 </style>

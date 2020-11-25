@@ -3,6 +3,7 @@ module.exports = {
   plugins: ["stylelint-order"],
   extends: ["stylelint-config-standard", "stylelint-config-prettier"],
   rules: {
+    "unit-no-unknown": [true, { ignoreUnits: ["rpx"] }],
     "selector-pseudo-class-no-unknown": [
       true,
       {
