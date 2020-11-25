@@ -2,32 +2,26 @@
   <view class="content">
     <image class="logo" src="../../static/logo.png" />
     <view>
-      <!-- <text class="title">{{title}}</text> -->
-      <!-- <x-commodity :data="data"></x-commodity> -->
+      <text class="title">
+        {{ title }}
+      </text>
+      <x-commodity :data="data" />
     </view>
   </view>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
-// eslint-disable-next-line no-unused-vars
+
 @Component
 export default class Index extends Vue {
   title = "Hello";
-  g: any;
   data = {
-    title: "sdfsdfasdddddfasdf",
+    title: "sdf",
   };
-  onLoad() {
-    console.log(this.g.data.discussPool.test1, "---------");
-    this.g.data.discussPool.test1 = 2;
-    // @ts-ignore
-    this.g.net.call("getLang", { test: 1 }).then(() => {});
-  }
+  onLoad() {}
 
-  mounted() {
-    console.log(this.$options);
-  }
+  mounted() {}
 }
 </script>
 

@@ -1,18 +1,11 @@
 <script lang="ts">
-import { Vue } from "vue-property-decorator";
+import { Vue, Component } from "vue-property-decorator";
 
-export default {
-  mpType: "app",
-  onLaunch() {
-    console.log("App Launch");
-  },
-  onShow() {
-    console.log("App Show");
-  },
-  onHide() {
-    console.log("App Hide");
-  },
-};
+@Component
+export default class App extends Vue {
+  name = "App";
+  mpType = "app";
+}
 </script>
 
 <style lang="scss" scoped>
