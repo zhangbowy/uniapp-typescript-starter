@@ -5,7 +5,7 @@ module.exports = {
     //公共路径配置
     domain: "",
     // server: "http://localhost:4000/xiaocxHome", //本地服务
-    server: "http://cxapi.tecqm.club", //线上地址
+    server: "https://mp.tecqm.cn", //线上地址
     uploadUrl: "", //图片上传路径
     staticUrl: "", //静态资源路径
     gameUrl: "",
