@@ -5,5 +5,6 @@ declare module "vue/types/vue" {
   interface Vue {
     $api: ApisMap;
     $u: any;
+    $g: any;
   }
 }

@@ -16,12 +16,11 @@ import { Vue, Component } from "vue-property-decorator";
 @Component
 export default class Index extends Vue {
   title = "Hello";
-  g: any;
   data = {
     title: "sdf",
   };
   onLoad() {
-    this.g.net.call("getLang");
+    this.$g.net.call("getLang");
   }
 
   mounted() {}

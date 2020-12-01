@@ -4,7 +4,7 @@ import App from "./App.vue";
 import uView from "uview-ui";
 // @ts-ignore
 import g from "./jslib/global";
-Vue.prototype.g = g;
+Vue.prototype.$g = g;
 Vue.use(uView);
 Vue.config.productionTip = false;
 import store from "./store";
