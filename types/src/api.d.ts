@@ -1,12 +1,16 @@
+import UserApis from "@/common/apis/user";
 export type PostApi<T = null, S = any> = (data?: T) => Promise<S>;
 export type GetApi<T = null, S = any> = (params?: T) => Promise<S>;
 
 export interface GetInfo {}
 
-export interface UserApi {
-  getInfo: GetApi<any>;
+export interface LoginData {
+  js_code: string;
+  encryptedData: string;
+  iv: string;
+  signature: string;
+  rawData: string;
 }
-
 export interface ApisMap {
-  user: UserApi;
+  user: UserApis;
 }

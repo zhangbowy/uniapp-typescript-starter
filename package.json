@@ -63,7 +63,8 @@
     "vue": "^2.6.11",
     "vue-class-component": "^6.3.2",
     "vue-property-decorator": "^8.0.0",
-    "vuex": "^3.2.0"
+    "vuex": "^3.2.0",
+    "webpack-env": "^0.8.0"
   },
   "devDependencies": {
     "@babel/plugin-syntax-typescript": "^7.2.0",
@@ -81,6 +82,7 @@
     "@dcloudio/webpack-uni-pages-loader": "^2.0.0-29820201110001",
     "@ls-lint/ls-lint": "^1.9.2",
     "@types/node": "^14.14.9",
+    "@types/webpack-env": "^1.16.0",
     "@typescript-eslint/eslint-plugin": "^4.8.2",
     "@typescript-eslint/parser": "^4.8.2",
     "@vue/cli-plugin-babel": "~4.5.0",

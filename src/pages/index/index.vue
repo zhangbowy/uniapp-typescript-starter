@@ -5,25 +5,26 @@
       <text class="title">
         {{ title }}
       </text>
-      <x-commodity :data="data" />
+      <components is="Commodity" />
     </view>
   </view>
 </template>
 
 <script lang="ts">
+import { AsyncComponent } from "vue";
 import { Vue, Component } from "vue-property-decorator";
+import Commodity from "./components/Commodity.vue";
 
-@Component
+@Component({
+  components: {
+    Commodity,
+  },
+})
 export default class Index extends Vue {
   title = "Hello";
-  data = {
-    title: "sdf",
-  };
-  onLoad() {
-    this.$g.net.call("getLang");
-  }
+  onLoad() {}
 
-  mounted() {}
+  created() {}
 }
 </script>
 

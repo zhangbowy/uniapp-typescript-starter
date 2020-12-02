@@ -1,7 +1,5 @@
 <template>
-  <view class="commodity">
-    {{ data.title }}
-  </view>
+  <view class="commodity"> {{ data.title }}fsadfsadfasdf </view>
 </template>
 
 <script lang="ts">

@@ -1,5 +1,5 @@
 <template>
-  <div class="commodity-search"></div>
+  <div class="commodity-search">sdfasdfsdffsdfsadf</div>
 </template>
 
 <script lang="ts">
