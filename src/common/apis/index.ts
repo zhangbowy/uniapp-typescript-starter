@@ -1,3 +1,4 @@
 import UserApis from "./user";
+import SystemSetting from "./system";
 
-export { UserApis };
+export { UserApis, SystemSetting };

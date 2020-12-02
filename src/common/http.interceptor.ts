@@ -21,8 +21,8 @@ const interceptor: PluginObject<Vue> = {
 
     // 响应拦截，判断状态码是否通过
     http.interceptor.response = (res: Record<string, any>) => {
-      if (res.code == 200) {
-        return res.result;
+      if (res.status === 1) {
+        return res;
       } else if (res.code == 201) {
         // 假设201为token失效，这里跳转登录
         vm.$u.toast("验证失败，请重新登录");

@@ -1,5 +1,8 @@
-// import { RootState } from "types";
+import { RootState } from "types";
 
-const getters = {};
+const getters = {
+  templateList: (state: RootState) => state.setting.templateList,
+  navList: (state: RootState) => state.setting.navList,
+};
 
 export default getters;
