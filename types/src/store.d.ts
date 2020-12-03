@@ -2,7 +2,11 @@ export interface TemplateItem {
   class?: string;
   active?: boolean;
   style?: Record<string, any>;
+  data?: any;
+  moduleIndex?: number;
 }
+
+export type StyleMode = "style1" | "style2" | "style3" | "style4";
 
 export interface NavItem {
   title: string;

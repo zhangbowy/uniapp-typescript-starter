@@ -24,6 +24,7 @@ module.exports = {
     "vue/custom-event-name-casing": "off",
     "vue/max-attributes-per-line": "off",
     "no-use-before-define": "off",
+    "vue/no-deprecated-slot-attribute": "off",
     // 'no-use-before-define': [
     //   'error',
     //   {

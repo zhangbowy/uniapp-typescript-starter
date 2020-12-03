@@ -1,13 +1,13 @@
 <template>
-  <div class="display-window"></div>
+  <div class="showcase"></div>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from "vue-property-decorator";
 
 @Component
-export default class DisplayWindow extends Vue {
-  name = "DisplayWindow";
+export default class Showcase extends Vue {
+  name = "Showcase";
 }
 </script>
 

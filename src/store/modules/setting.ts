@@ -18,7 +18,6 @@ const actions: ActionTree<SettingState, any> = {
     state.templateList = templateList;
   },
   setNavList: ({ state }, navList: NavItem[]) => {
-    console.log(navList, "navList");
     uni.setStorage({
       key: "nav_list",
       data: JSON.stringify(navList),

@@ -34,4 +34,8 @@ export default class App extends Vue {
 </script>
 <style lang="scss" scoped>
 @import "uview-ui/index.scss";
+/* App.vue */
+.cell-hover-class {
+  background-color: rgb(235, 237, 238);
+}
 </style>

@@ -63,6 +63,12 @@
 				"iconPath": "static/image/tab-my.png",
 				"selectedIconPath": "static/image/tab-my-current.png",
 				"text": "我的"
+			},
+			{
+				"pagePath": "pages/tabbar/user/user",
+				"iconPath": "static/image/tab-my.png",
+				"selectedIconPath": "static/image/tab-my-current.png",
+				"text": "分销申请"
 			}
 		]
 	}
