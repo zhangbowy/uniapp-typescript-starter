@@ -1,4 +1,4 @@
-import { RootState } from "types";
+import { RootState } from 'types';
 
 const getters = {
   templateList: (state: RootState) => state.setting.templateList,

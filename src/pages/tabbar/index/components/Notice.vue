@@ -1,14 +1,14 @@
 <template>
-  <div class="notice"></div>
+  <div class="notice" />
 </template>
 
 <script lang="ts">
-import { Vue, Component } from "vue-property-decorator";
+  import { Vue, Component } from 'vue-property-decorator';
 
-@Component
-export default class Notice extends Vue {
-  name = "Notice";
-}
+  @Component
+  export default class Notice extends Vue {
+    name = 'Notice';
+  }
 </script>
 
 <style lang="scss" scoped></style>
