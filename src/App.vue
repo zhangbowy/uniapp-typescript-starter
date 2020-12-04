@@ -3,37 +3,29 @@ import { GlobalData } from "types";
 import { Vue, Component } from "vue-property-decorator";
 import { Action } from "vuex-class";
 
-@Component
-export default class App extends Vue {
-  public name = "App";
-  mpType = "app";
-  @Action login!: Function;
-
-  globalData: GlobalData = {};
-
-  onLaunch() {
-    let userInfo = uni.getStorageSync("userInfo") || {};
-    if (userInfo.id) {
-      //更新登陆状态
-      uni.getStorage({
-        key: "userInfo",
-        success: (res) => {
-          this.login(res.data);
-        },
-      });
-    }
-  }
-  onShow() {
+import { Vue } from "vue-property-decorator";
+import func from "vue-temp/vue-editor-bridge";
+export default {
+  mpType: "app",
+  name: "App",
+  onLaunch: function () {
+    console.log("App Launch");
+  },
+  onShow: function () {
     console.log("App Show");
-  }
-  onHide() {
+  },
+  onLoad: function () {
+    debugger;
+    console.log("App onLoad");
+  },
+  onHide: function () {
     console.log("App Hide");
-  }
-  created() {}
-}
+  },
+};
 </script>
 <style lang="scss" scoped>
 @import "uview-ui/index.scss";
+
 /* App.vue */
 .cell-hover-class {
   background-color: rgb(235, 237, 238);
