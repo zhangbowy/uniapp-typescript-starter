@@ -1,5 +1,5 @@
-import { Module, ActionTree } from "vuex";
-import { NavItem, SettingState, TemplateItem } from "types";
+import { Module, ActionTree } from 'vuex';
+import { NavItem, SettingState, TemplateItem } from 'types';
 
 const state: SettingState = {
   templateList: [],
@@ -9,20 +9,20 @@ const state: SettingState = {
 const actions: ActionTree<SettingState, any> = {
   setTemplateList: ({ state }, templateList: TemplateItem[]) => {
     uni.setStorage({
-      key: "template_list",
+      key: 'template_list',
       data: JSON.stringify(templateList),
       success: function () {
-        console.log("success");
+        console.log('success');
       },
     });
     state.templateList = templateList;
   },
   setNavList: ({ state }, navList: NavItem[]) => {
     uni.setStorage({
-      key: "nav_list",
+      key: 'nav_list',
       data: JSON.stringify(navList),
       success: function () {
-        console.log("success");
+        console.log('success');
       },
     });
     state.navList = navList;

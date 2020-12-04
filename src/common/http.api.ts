@@ -1,7 +1,7 @@
 // /common/http.api.js
-import { ApisMap } from "types";
-import { PluginObject } from "vue";
-import { UserApis, SystemSetting, Goods } from "./apis";
+import { ApisMap } from 'types';
+import { PluginObject } from 'vue';
+import { UserApis, SystemSetting, Goods } from './apis';
 
 const apis: PluginObject<Vue> = {
   install: (vue, vm) => {

@@ -1,6 +1,6 @@
 // /common/http.interceptor.js
-import { PluginObject } from "vue";
-import config from "../../config/config";
+import { PluginObject } from 'vue';
+import config from '../../config/config';
 
 const interceptor: PluginObject<Vue> = {
   install: (vue, vm) => {
@@ -9,7 +9,7 @@ const interceptor: PluginObject<Vue> = {
     // 此为自定义配置参数，具体参数见上方说明
     http.setConfig({
       baseUrl: config.url.server,
-      loadingText: "努力加载中~",
+      loadingText: '努力加载中~',
       loadingTime: 800,
       // ......
     });
@@ -25,7 +25,7 @@ const interceptor: PluginObject<Vue> = {
         return res;
       } else if (res.code == 201) {
         // 假设201为token失效，这里跳转登录
-        vm.$u.toast("验证失败，请重新登录");
+        vm.$u.toast('验证失败，请重新登录');
         setTimeout(() => {
           // vm.$u.route('/pages/user/login')
         }, 1500);

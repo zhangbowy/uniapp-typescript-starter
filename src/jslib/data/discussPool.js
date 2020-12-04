@@ -42,13 +42,13 @@ export default class discussPool {
 
 function createData($Obj) {
   var d = {};
-  d.id = "";
-  d.name = "";
-  d.category_name = "";
-  d.category_id = "";
-  d.desc = "";
-  d.icon = "";
-  d.article = "";
+  d.id = '';
+  d.name = '';
+  d.category_name = '';
+  d.category_id = '';
+  d.desc = '';
+  d.icon = '';
+  d.article = '';
   d.fg_list = [];
   d.update = update.bind(d);
   d.update($Obj);
@@ -56,13 +56,12 @@ function createData($Obj) {
 }
 
 function update($Obj) {
-  $Obj.hasOwnProperty("id") && (this.id = $Obj.id);
-  $Obj.hasOwnProperty("name") && (this.name = $Obj.name);
-  $Obj.hasOwnProperty("category_name") &&
-    (this.category_name = $Obj.category_name);
-  $Obj.hasOwnProperty("category_id") && (this.category_id = $Obj.category_id);
-  $Obj.hasOwnProperty("desc") && (this.desc = $Obj.desc);
-  $Obj.hasOwnProperty("icon") && (this.icon = $Obj.icon);
-  $Obj.hasOwnProperty("article") && (this.article = $Obj.article);
-  $Obj.hasOwnProperty("fg_list") && (this.fgList = $Obj.fg_list);
+  $Obj.hasOwnProperty('id') && (this.id = $Obj.id);
+  $Obj.hasOwnProperty('name') && (this.name = $Obj.name);
+  $Obj.hasOwnProperty('category_name') && (this.category_name = $Obj.category_name);
+  $Obj.hasOwnProperty('category_id') && (this.category_id = $Obj.category_id);
+  $Obj.hasOwnProperty('desc') && (this.desc = $Obj.desc);
+  $Obj.hasOwnProperty('icon') && (this.icon = $Obj.icon);
+  $Obj.hasOwnProperty('article') && (this.article = $Obj.article);
+  $Obj.hasOwnProperty('fg_list') && (this.fgList = $Obj.fg_list);
 }

@@ -1,9 +1,9 @@
-import { GetApi } from "types";
+import { GetApi } from 'types';
 
 class SystemSetting {
-  private templateUrl = "/api/frontend/template?sid=100000000";
-  private systemUrl = "/api/system?sid=100000000";
-  private navUrl = "/api/shop/navigation?sid=100000000";
+  private templateUrl = '/api/frontend/template?sid=100000000';
+  private systemUrl = '/api/system?sid=100000000';
+  private navUrl = '/api/shop/navigation?sid=100000000';
   constructor(private vm: Vue) {}
   /**
    * 获取首页装修参数

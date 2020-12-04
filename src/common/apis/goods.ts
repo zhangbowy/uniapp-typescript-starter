@@ -1,7 +1,7 @@
-import { GetApi, GetGoodsList } from "types";
-import config from "../../../config/config";
+import { GetApi, GetGoodsList } from 'types';
+import config from '../../../config/config';
 class SystemSetting {
-  private templateUrl = "/api/frontend/template?sid=100000000";
+  private templateUrl = '/api/frontend/template?sid=100000000';
   constructor(private vm: Vue) {}
   /**
    * 获取商品列表

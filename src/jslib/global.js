@@ -1,11 +1,11 @@
 /**
  * Created by zhangbo on 2018/11/29.
  */
-import g from "./utils/global";
-import * as data from "./data/dataPool";
-import * as config from "./lib/config";
-import * as func from "./func";
-import * as ui from "./gui";
+import g from './utils/global';
+import * as data from './data/dataPool';
+import * as config from './lib/config';
+import * as func from './func';
+import * as ui from './gui';
 merge((g.config = {}), config);
 merge((g.data = {}), data);
 merge((g.func = g.func ? g.func : {}), func);

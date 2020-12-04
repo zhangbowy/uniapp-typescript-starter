@@ -1,5 +1,5 @@
-import { Module, ActionTree, MutationTree } from "vuex";
-import { UserState, UserInfo } from "types";
+import { Module, ActionTree, MutationTree } from 'vuex';
+import { UserState, UserInfo } from 'types';
 
 const state: UserState = {
   userInfo: {},
@@ -13,8 +13,8 @@ const mutations: MutationTree<UserState> = {
 
 const actions: ActionTree<UserState, any> = {
   login({ commit }, userInfo: UserInfo) {
-    console.log("mLogin", userInfo);
-    commit("SET_TOKEN", "");
+    console.log('mLogin', userInfo);
+    commit('SET_TOKEN', '');
     // return new Promise((resolve, reject) => {
     //   api.login(userInfo).then(response => {
     //     if(response.data.code ==200){

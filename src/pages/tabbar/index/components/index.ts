@@ -1,4 +1,4 @@
-const context = require.context("./", false, /\.vue$/);
+const context = require.context('./', false, /\.vue$/);
 
 // 要跳过的模块
 const excludes: string[] = [];
