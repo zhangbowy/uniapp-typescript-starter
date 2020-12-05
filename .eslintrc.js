@@ -61,5 +61,23 @@ module.exports = {
       },
     ],
     'space-before-function-paren': 'off',
+    //vue里一行最多几个属性
+    'vue/max-attributes-per-line': [
+      'error',
+      {
+        singleline: 1,
+        multiline: {
+          max: 1,
+          allowFirstLine: true,
+        },
+      },
+    ],
+    //强制在计算属性 存在return语句
+    'vue/return-in-computed-property': [
+      'error',
+      {
+        treatUndefinedAsUnspecified: true,
+      },
+    ],
   },
 };
