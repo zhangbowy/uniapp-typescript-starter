@@ -18,13 +18,14 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {
+    // 'prettier/prettier': 'error',
     '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     'vue/custom-event-name-casing': 'off',
-    'vue/max-attributes-per-line': 'off',
+    // 'vue/max-attributes-per-line': 'off',
     'no-use-before-define': 'off',
     'vue/no-deprecated-slot-attribute': 'off',
     // 'no-use-before-define': [
@@ -68,7 +69,7 @@ module.exports = {
         singleline: 1,
         multiline: {
           max: 1,
-          allowFirstLine: true,
+          allowFirstLine: false,
         },
       },
     ],
