@@ -1,5 +1,5 @@
 <template>
-  <div class="showcase" />
+  <div v-if="1" class="1" />
 </template>
 <script lang="ts">
   import { Vue, Component } from 'vue-property-decorator';

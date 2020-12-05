@@ -15,19 +15,19 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from "vue-property-decorator";
+  import { Vue, Component, Prop } from 'vue-property-decorator';
 
-@Component
-export default class TextNav extends Vue {
-  name = "TextNav";
+  @Component
+  export default class TextNav extends Vue {
+    name = 'TextNav';
 
-  @Prop({ default: () => ({}), type: Object }) data!: Record<string, any>;
+    @Prop({ default: () => ({}), type: Object }) data!: Record<string, any>;
 
-  onItemClick(item: Record<string, any>) {
-    console.log(item);
-    // uni.navigateTo(item.path);
+    onItemClick(item: Record<string, any>) {
+      console.log(item);
+      // uni.navigateTo(item.path);
+    }
   }
-}
 </script>
 
 <style lang="scss" scoped></style>

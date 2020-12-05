@@ -1,14 +1,14 @@
 <template>
-  <div class="swiper"></div>
+  <div class="swiper" />
 </template>
 
 <script lang="ts">
-import { Vue, Component } from "vue-property-decorator";
+  import { Vue, Component } from 'vue-property-decorator';
 
-@Component
-export default class Swiper extends Vue {
-  name = "Swiper";
-}
+  @Component
+  export default class Swiper extends Vue {
+    name = 'Swiper';
+  }
 </script>
 
 <style lang="scss" scoped></style>

@@ -1,14 +1,14 @@
 <template>
-  <div class="copyright"></div>
+  <div class="copyright" />
 </template>
 
 <script lang="ts">
-import { Vue, Component } from "vue-property-decorator";
+  import { Vue, Component } from 'vue-property-decorator';
 
-@Component
-export default class Copyright extends Vue {
-  name = "Copyright";
-}
+  @Component
+  export default class Copyright extends Vue {
+    name = 'Copyright';
+  }
 </script>
 
 <style lang="scss" scoped></style>

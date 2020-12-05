@@ -1,16 +1,16 @@
 <template>
-  <div class="page-set"></div>
+  <div class="page-set" />
 </template>
 
 <script lang="ts">
-import { Vue, Component } from "vue-property-decorator";
+  import { Vue, Component } from 'vue-property-decorator';
 
-@Component
-export default class PageSet extends Vue {
-  name = "PageSet";
-}
+  @Component
+  export default class PageSet extends Vue {
+    name = 'PageSet';
+  }
 </script>
 
 <style lang="scss" scoped>
-// css
+  // css
 </style>

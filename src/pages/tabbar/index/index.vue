@@ -1,8 +1,16 @@
 <template>
   <view class="content">
     <view class="component-list">
-      <view v-for="(template, index) in mockTemplateList" :key="`${template.class}${index}`">
-        <ItemDisplay v-if="template.class === 'item-display'" :data="template.data" />
+      <view
+        v-for="(template, index) in mockTemplateList"
+        :key="`${template.class}${index}`"
+        class="1"
+      >
+        <view
+          v-for="(template, index) in mockTemplateList"
+          :key="`${template.class}${index}`"
+          class="1"
+        />
         <SearchText v-if="template.class === 'search-text'" :data="template.data" />
         <AllRights v-if="template.class === 'all-rights'" :data="template.data" />
         <Showcase v-if="template.class === 'showcase'" :data="template.data" />

@@ -12,22 +12,21 @@ module.exports = {
   extends: [
     'plugin:vue/recommended',
     // 'eslint:recommended',
-    'plugin:vue/vue3-recommended',
+    // 'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
   ],
   rules: {
-    // 'prettier/prettier': 'error',
     '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-empty-function': 'off',
     'vue/custom-event-name-casing': 'off',
-    // 'vue/max-attributes-per-line': 'off',
+    'vue/max-attributes-per-line': 'off',
     'no-use-before-define': 'off',
-    'vue/no-deprecated-slot-attribute': 'off',
+    // 'vue/no-deprecated-slot-attribute': 'off',
     // 'no-use-before-define': [
     //   'error',
     //   {
@@ -62,23 +61,31 @@ module.exports = {
       },
     ],
     'space-before-function-paren': 'off',
-    //vue里一行最多几个属性
-    'vue/max-attributes-per-line': [
-      'error',
-      {
-        singleline: 1,
-        multiline: {
-          max: 1,
-          allowFirstLine: false,
-        },
-      },
-    ],
-    //强制在计算属性 存在return语句
+    // //vue里一行最多几个属性
+    // 'vue/max-attributes-per-line': [
+    //   'error',
+    //   {
+    //     singleline: 1,
+    //     multiline: {
+    //       max: 1,
+    //       allowFirstLine: false,
+    //     },
+    //   },
+    // ],
+    // //强制在计算属性 存在return语句
     'vue/return-in-computed-property': [
       'error',
       {
         treatUndefinedAsUnspecified: true,
       },
     ],
+    // 'vue/html-self-closing': [
+    //   'error',
+    //   {
+    //     html: {
+    //       void: 'any',
+    //     },
+    //   },
+    // ],
   },
 };
