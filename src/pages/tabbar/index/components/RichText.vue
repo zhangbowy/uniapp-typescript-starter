@@ -1,5 +1,32 @@
 <template>
-  <view class="rich-text" class="1">
+  <view class="rich-text">
+    <u-parse
+      :html="data"
+      :selectable="true"
+      :tag-style="style"
+      :lazy-load="true"
+      :show-with-animation="true"
+      :autoset-title="false"
+      :use-cache="true"
+    />
+    <u-parse
+      :html="data"
+      :selectable="true"
+      :tag-style="style"
+      :lazy-load="true"
+      :show-with-animation="true"
+      :autoset-title="false"
+      :use-cache="true"
+    />
+    <u-parse
+      :html="data"
+      :selectable="true"
+      :tag-style="style"
+      :lazy-load="true"
+      :show-with-animation="true"
+      :autoset-title="false"
+      :use-cache="true"
+    />
     <u-parse
       :html="data"
       :selectable="true"
